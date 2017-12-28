@@ -63,13 +63,7 @@ li a:hover {
   Major section Styles
 #############################
 */
-#name-cover span a
-{
-  color: white;
-}
-#name-cover span{
-  padding: 6px;
-}
+
 #profile-pic {
   max-width: 38%;
   max-height: 38%;
@@ -87,13 +81,21 @@ li a:hover {
 #name-cover {
   margin: auto;
   position: absolute;
-  top: 70%;
+  top: 67%;
   right: 0;
-  bottom: 0;
   left: 0;
   font-size: 3em;
   color: #EEEEEE;
   display: block;
+}
+#name-cover a
+{
+  color: #D2D7D3;
+  font-size: .8em;
+}
+#name-cover a:hover
+{
+  color: #ECF0F1;
 }
 
 #skills-cover {
@@ -191,8 +193,12 @@ li a:hover {
   End Aux Styles
 ##########################
 */
+
+
 @media only screen and (max-width:414px) and (max-height:812px)
 {
+
+
   [class$="plain"],.devicon-react-original
   {
     font-size: 5rem;
