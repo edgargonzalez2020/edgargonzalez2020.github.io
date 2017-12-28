@@ -1,0 +1,225 @@
+@import url("https://fonts.googleapis.com/css?family=Barlow+Condensed");
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Barlow Condensed';
+}
+
+/*
+##########################
+  Nav Styles
+##########################
+*/
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #D2D7D3;
+  width: 100%;
+  position: fixed;
+  z-index: 2;
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  color: white;
+  padding: 14px 16px;
+  margin: 0;
+  text-align: center;
+  text-decoration: none;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 1.2em;
+  text-transform: uppercase;
+}
+
+/*
+##########################
+End Nav Styles
+##########################
+*/
+
+li a:hover {
+  background-color: #ECF0F1;
+}
+
+.background-cover {
+  background-image: url("../img/back.jpg");
+  background-size: cover;
+  height: 100vh;
+  text-align: center;
+  width: 100vw;
+  padding: 0;
+  margin: 0;
+}
+
+/*
+#############################
+  Major section Styles
+#############################
+*/
+#name-cover span a
+{
+  color: white;
+}
+#name-cover span{
+  padding: 6px;
+}
+#profile-pic {
+  max-width: 38%;
+  max-height: 38%;
+  border-radius: 100%;
+  border: solid 5px #EEEEEE;
+  padding: 0;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+#name-cover {
+  margin: auto;
+  position: absolute;
+  top: 70%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  font-size: 3em;
+  color: #EEEEEE;
+  display: block;
+}
+
+#skills-cover {
+  padding-top: 2vh;
+  height: 100%;
+  text-align: center;
+  font-size: 1.7em;
+  background-color: #8199A3;
+}
+
+#projects {
+  padding-top: 2vh;
+  height: 100vh;
+  text-align: center;
+  font-size: 1.7em;
+  background-color: #D6DAC2;
+}
+
+#skills-cover div h1 {
+  font-size: .9em;
+  clear: both;
+}
+
+#projects div h1 {
+  font-size: .9em;
+}
+
+/*
+##########################
+  End Major Section styles
+##########################
+*/
+
+/*
+##########################
+  Aux Styles
+##########################
+*/
+[class$="plain"],.devicon-react-original
+{
+  font-size: 10rem;
+}
+[class$="plain"]:hover,.devicon-react-original:hover
+{
+  color: #D2D7D3;
+}
+
+#skill-cards-programming,#skill-cards-web
+{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: row wrap;
+  justify-content: center;
+}
+
+
+.card-pic {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+}
+
+.project-pic {
+  display: block;
+  max-width: 100%;
+  max-height: 105%;
+}
+
+.project-card {
+  height: 73vh;
+  width: 39vw;
+  padding: 0;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  display: inline-block;
+  vertical-align: top;
+}
+
+#java {
+  height: 50%;
+  width: 100%;
+}
+
+#tech {
+  font-size: .9em;
+}
+#description-project
+{
+  font-size: .8em;
+  float: left;
+}
+
+
+/*
+##########################
+  End Aux Styles
+##########################
+*/
+@media only screen and (max-width:414px) and (max-height:812px)
+{
+  [class$="plain"],.devicon-react-original
+  {
+    font-size: 5rem;
+  }
+  #skills-cover
+  {
+    font-size:1em;
+    height: 70vh;
+    padding-top: 30px;
+  }
+  #skill-cards-web
+  {
+    margin-top:60px;
+  }
+  #skill-cards-programming
+  {
+    margin-top: 40px;
+  }
+  #skill-text
+  {
+    font-size: 2em;
+  }
+  #projects {
+    font-size:1em;
+    padding-top: 30px;
+  }
+  .project-card
+  {
+    height:50vh;
+  }

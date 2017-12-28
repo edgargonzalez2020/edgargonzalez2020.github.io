@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Edgar Gonzalez</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="./css/styles.css" />
+  <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <link href="https://use.fontawesome.com/releases/v5.0.2/css/all.css" rel="stylesheet">
+</head>
+
+<body data-spy="scroll" data-target="#scroll-to" data-offset="90">
+  <nav id="scroll-to">
+    <ul>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills-cover">Skills</a></li>
+      <li><a href="#background-cover">Me</a></li>
+    </ul>
+  </nav>
+  <div class="background-cover" id="background-cover">
+    <img src="./img/me.jpg" id="profile-pic" class="animated" />
+    <div id="name-cover" class="animated">
+      <p>EDGAR GONZALEZ</p>
+      <span title="Github"><a href="github.com/edgargonzalez2020"><i class="fab fa-github-square"></i></a></span>
+      <span title="Email me!"><a href="mailto:edgar.gonzalez2@mavs.uta.edu"><i class="fas fa-at"></i></a></span>
+      <span title="Resume"><a href="./img/Edgar_Gonzalez.pdf"><i class="fas fa-clipboard"></i></a></span>
+    </div>
+  </div>
+  <div id="skills-cover">
+    <h1 class="animated" id="skill-text">Web and Programming Skills</h1>
+    <div id="cards" class="animated">
+      <div id="skill-cards-programming" class="animated">
+        <div class="card">
+          <i class="devicon-cplusplus-plain"></i>
+          <h1>C++</h1>
+        </div>
+        <div class="card">
+          <i class="devicon-c-plain"></i>
+          <h1>C</h1>
+        </div>
+        <div class="card">
+          <i class="devicon-java-plain"></i>
+          <h1>JAVA</h1>
+        </div>
+        <div class="card">
+          <i class="devicon-python-plain"></i>
+          <h1>PYTHON</h1>
+        </div>
+      </div>
+      <div id="skill-cards-web">
+        <div class="card">
+          <i class="devicon-html5-plain"></i>
+          <h1>HTML</h1>
+        </div>
+        <div class="card">
+          <i class="devicon-css3-plain"></i>
+          <h1>CSS</h1>
+        </div>
+        <div class="card">
+          <i class="devicon-javascript-plain"></i>
+          <h1>JAVASCRIPT</h1>
+        </div>
+        <div class="card">
+          <i class="devicon-react-original"></i>
+          <h1>REACTJS</h1>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div id="projects">
+    <h1 class="animated" id="project-text">Projects</h1>
+    <div class="animated" id="github-user">
+      <div class="project-card" id="github-user-card">
+        <a href="https://edgargonzalez2020.github.io/github-user/"><img src="./img/github-user.png" class="project-pic" /></a>
+        <h1>Github-user</h1>
+        <div id="description-project">
+          <p>
+            Technologies Used: <span id="tech"><i>REACTJS</i>, <i>HTML</i>, <i>CSS</i>, <i>JAVASCRIPT</i></span>.
+          </p>
+          <p>
+            Description: Web app that queries Github API based on user input. Once the information is fetched, it is then displayed in an informative manner
+          </p>
+        </div>
+      </div>
+      <p>
+        *Stay tuned, more to come!!
+      </p>
+    </div>
+
+  </div>
+
+
+
+
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+  <script src="./js/positions.js"></script>
+  <script>
+    window.onbeforeunload = function() {
+      window.scrollTo(0, 0);
+    }
+  </script>
+  <script>
+    $(document).ready(function() {
+      // Add smooth scrolling to all links
+      $("a").on('click', function(event) {
+
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
+
+          // Store hash
+          var hash = this.hash;
+
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function() {
+
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        } // End if
+      });
+    });
+  </script>
+
+</body>
+
+</html>
